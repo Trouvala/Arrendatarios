@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trouvala - Trouvez votre logement à Montréal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 700px;
+      margin: 40px auto;
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    h1, h3 {
+      color: #333;
+      text-align: center;
+    }
+    p {
+      color: #555;
+      line-height: 1.6;
+    }
+    .cta, form {
+      text-align: center;
+    }
+    .cta a, button {
+      background-color: #25D366;
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      display: inline-block;
+    }
+    .cta a img {
+      height: 20px;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+    .footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #888;
+      margin-top: 40px;
+    }
+    input, textarea {
+      padding: 12px;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-bottom: 12px;
+    }
+    textarea {
+      resize: vertical;
+    }
+  </style>
+</head>
+<body>
+  <div style="text-align:center; margin-top: 20px;">
+    <img src="trouvala-logo.png" alt="Trouvala Logo" style="max-width: 180px;"/>
+  </div>
+  <div class="container">
+    <h1>À la recherche d’un logement à Montréal ?</h1>
+    <p>Nous vous aidons à le trouver rapidement, sans arnaques et sans perdre votre temps.</p>
+
+    <div class="cta" style="margin: 20px 0;">
+      <a href="https://wa.me/15141234567" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+        Écrivez-nous sur WhatsApp
+      </a>
+    </div>
+
+    <h3>Remplissez le formulaire</h3>
+    <form action="https://formsubmit.co/tu-correo@ejemplo.com" method="POST">
+      <input type="text" name="Nom" placeholder="Votre nom complet" required>
+      <input type="email" name="Courriel" placeholder="Courriel" required>
+      <input type="text" name="Téléphone" placeholder="Téléphone (optionnel)">
+      <input type="text" name="Type de logement" placeholder="Type de logement recherché (ex : 3½)" required>
+      <input type="text" name="Budget" placeholder="Budget approximatif">
+      <input type="text" name="Quartier" placeholder="Quartier préféré">
+      <input type="text" name="Date de déménagement" placeholder="Date souhaitée de déménagement">
+      <textarea name="Autres détails" placeholder="Autres détails importants (facultatif)"></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+
+    <div style="text-align:center; margin-top:40px;">
+      <a href="https://trouvala.com/landing-proprietaires" style="font-size:0.9em; color:#007bff;">Vous êtes propriétaire ou gestionnaire ? Cliquez ici</a>
+    </div>
+
+    <div class="footer">Trouvala | Service indépendant, sans représentation légale.</div>
+  </div>
+</body>
+</html>
