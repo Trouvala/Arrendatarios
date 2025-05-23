@@ -1,108 +1,67 @@
 
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Trouvala</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #ffffff;
-      margin: 0;
-      padding: 0;
-    }
-    .container {
-      max-width: 640px;
-      margin: 40px auto;
-      background: #ffffff;
-      padding: 40px 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
-      text-align: center;
-    }
-    .lang {
-      font-size: 15px;
-      margin-bottom: 15px;
-    }
-    .lang a {
-      text-decoration: none;
-      color: #0d3d91;
-      margin: 0 6px;
-      font-weight: 500;
-    }
-    h1 {
-      font-size: 26px;
-      color: #222;
-      margin-bottom: 15px;
-    }
-    p {
-      color: #444;
-      font-size: 16px;
-      margin-bottom: 30px;
-    }
-    img {
-      max-width: 160px;
-      margin-bottom: 10px;
-    }
-    button, .whatsapp {
-      background: #25d366;
-      color: white;
-      border: none;
-      padding: 14px 24px;
-      border-radius: 8px;
-      font-size: 16px;
-      margin: 10px auto 30px;
-      display: inline-block;
-      text-decoration: none;
-    }
-    input, textarea {
-      width: 100%;
-      padding: 12px;
-      margin: 10px 0;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      font-size: 15px;
-      box-sizing: border-box;
-    }
-    h3 {
-      margin-bottom: 20px;
-      color: #333;
-    }
-    .footer-link {
-      font-size: 14px;
-      margin-top: 25px;
-    }
-    .footer-link a {
-      color: #0d3d91;
-      text-decoration: none;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <img src="/trouvala-logo.png" alt="Trouvala Logo"/>
-    <div class="lang">
-      <a href="/es">Esp</a> | <a href="/en">Eng</a> | <a href="/">Fr</a>
-    </div>
-    <h1>À la recherche d’un logement à Montréal ?</h1>
-    <p>Nous vous aidons à le trouver rapidement, sans arnaques et sans perdre votre temps.</p>
-    <a class="whatsapp" href="https://wa.me/15149758856" target="_blank">
-      Écrivez-nous sur WhatsApp
-    </a>
-    <h3>Remplissez le formulaire</h3>
-    <form method="POST" action="https://formsubmit.co/your@email.com">
-      <input type="text" name="name" placeholder="Votre nom complet" required />
-      <input type="email" name="email" placeholder="Courriel" required />
-      <input type="text" name="phone" placeholder="Téléphone (optionnel)" />
-      <input type="text" name="type" placeholder="Type de logement recherché (ex : 3½)" />
-      <input type="text" name="budget" placeholder="Budget approximatif" />
-      <textarea name="message" rows="4" placeholder="Commentaires supplémentaires (optionnel)"></textarea>
-      <button type="submit">Envoyer la demande</button>
-    </form>
-    <div class="footer-link">
-      <a href="/proprietaires">Vous êtes propriétaire ou gestionnaire ? Cliquez ici</a>
-    </div>
-  </div>
-</body>
-</html>
+    <!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Locations Express MTL</title>
+        <style>
+            body {{
+                background-color: #fefdfb;
+                font-family: Arial, sans-serif;
+                text-align: center;
+                padding: 20px;
+            }}
+            a {{
+                color: #0b3d91;
+                margin: 0 10px;
+                text-decoration: none;
+            }}
+            img {{
+                max-width: 180px;
+                margin: 20px auto;
+            }}
+            .btn {{
+                background-color: #25D366;
+                color: white;
+                padding: 12px 25px;
+                border-radius: 5px;
+                border: none;
+                font-size: 16px;
+                margin-top: 15px;
+            }}
+            .form {{
+                max-width: 400px;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }}
+            input, textarea {{
+                padding: 10px;
+                font-size: 14px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+            }}
+        </style>
+    </head>
+    <body>
+        <img src="../trouvala-logo.png" alt="Trouvala Logo">
+        <div>
+            <a href="../es/index.html">Esp</a> | <a href="../en/index.html">Eng</a> | <a href="index.html">Fr</a>
+        </div>
+        <h1>À la recherche d’un logement à Montréal ?</h1>
+        <p>Nous vous aidons à le trouver rapidement, sans arnaques et sans perdre votre temps.</p>
+        <a class="btn" href="https://wa.me/15147030572" target="_blank">Écrivez-nous sur WhatsApp</a>
+        <h3>Remplissez le formulaire</h3>
+        <form class="form" action="https://formsubmit.co/info@trouvala.com" method="POST">
+            <input type="text" name="Nom complet" placeholder="Votre nom complet" required>
+            <input type="email" name="Courriel" placeholder="Courriel" required>
+            <input type="text" name="Téléphone" placeholder="Téléphone (optionnel)">
+            <input type="text" name="Type de logement" placeholder="Type de logement recherché (ex : 3½)">
+            <input type="text" name="Budget" placeholder="Budget approximatif">
+            <textarea name="Commentaires" placeholder="Commentaires supplémentaires (optionnel)"></textarea>
+            <button type="submit" class="btn">Envoyer la demande</button>
+        </form>
+    </body>
+    </html>
+    
