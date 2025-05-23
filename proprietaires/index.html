@@ -1,114 +1,126 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Trouvala - Landlords</title>
-    <style>
-        body {
-            background-color: #ffffff;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-        .container {
-            max-width: 540px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-        .logo {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 1rem;
-        }
-        .logo img {
-            height: 80px;
-        }
-        .lang-switcher {
-            text-align: center;
-            margin-bottom: 1rem;
-        }
-        .lang-switcher a {
-            margin: 0 5px;
-            text-decoration: none;
-            color: #003366;
-            font-weight: 500;
-        }
-        h1 {
-            text-align: center;
-            font-size: 1.6rem;
-            margin-bottom: 0.5rem;
-        }
-        p {
-            text-align: center;
-            margin-bottom: 1.5rem;
-        }
-        .whatsapp-button {
-            background-color: #25D366;
-            color: white;
-            border: none;
-            padding: 12px 18px;
-            font-size: 1rem;
-            border-radius: 6px;
-            text-align: center;
-            display: block;
-            width: 100%;
-            max-width: 340px;
-            margin: 0 auto 1.5rem auto;
-            cursor: pointer;
-            text-decoration: none;
-        }
-        h2 {
-            text-align: center;
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-        }
-        input, textarea {
-            padding: 10px;
-            font-size: 1rem;
-            margin-bottom: 1rem;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-        }
-        footer {
-            text-align: center;
-            font-size: 0.85rem;
-            color: #777;
-            margin-top: 2rem;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Locations Express MTL</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 640px;
+      margin: 40px auto;
+      background: #ffffff;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+      text-align: center;
+    }
+    .lang {
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
+    .lang a {
+      text-decoration: none;
+      color: #0d3d91;
+      margin: 0 6px;
+      font-weight: 500;
+    }
+    h1 {
+      font-size: 26px;
+      color: #222;
+      margin-bottom: 15px;
+    }
+    p {
+      color: #444;
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+    img {
+      max-width: 160px;
+      margin-bottom: 10px;
+    }
+    .whatsapp {
+      background: #25d366;
+      color: white;
+      border: none;
+      padding: 14px 24px;
+      border-radius: 8px;
+      font-size: 16px;
+      margin: 10px auto 30px;
+      display: inline-block;
+      text-decoration: none;
+    }
+    ul {
+      text-align: left;
+      margin: 0 auto 30px;
+      max-width: 480px;
+      color: #444;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
+    h3 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 15px;
+      box-sizing: border-box;
+    }
+    button {
+      background: #22c55e;
+      color: white;
+      border: none;
+      padding: 14px 30px;
+      border-radius: 6px;
+      font-size: 16px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="logo">
-            <img src="trouvala-logo.png" alt="Trouvala Logo" />
-        </div>
-        <div class="lang-switcher">
-            <a href="proprietaires-es/index.html">Esp</a> |
-            <a href="proprietaires-en/index.html">Eng</a> |
-            <a href="proprietaires/index.html">Fr</a>
-        </div>
-        <h1>Do you own a property in Montreal?</h1>
-        <p>Let us help you rent it fast, with no stress or headaches.</p>
-        <a class="whatsapp-button" href="https://wa.me/15149964655" target="_blank">Write to us on WhatsApp</a>
-        <h2>Owner Form</h2>
-        <form action="https://formsubmit.co/info@trouvala.com" method="POST">
-            <input type="text" name="name" placeholder="Your full name" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <input type="text" name="phone" placeholder="Phone (optional)">
-            <input type="text" name="property_type" placeholder="Type of property (e.g. 3½)">
-            <textarea name="comments" placeholder="Additional comments (optional)" rows="3"></textarea>
-            <button type="submit" class="whatsapp-button" style="margin-top: 1rem;">Send</button>
-        </form>
-        <footer>
-            Montreal Landlord Service | Independent service, not a legal representative.
-        </footer>
+  <div class="container">
+    <img src="/trouvala-logo.png" alt="Trouvala Logo"/>
+    <div class="lang">
+      <a href="/proprietaires-es">Esp</a> | <a href="/proprietaires-en">Eng</a> | <a href="/proprietaires">Fr</a>
     </div>
+    <h1>Locations Express MTL</h1>
+    <p>Vous avez un appart à Montréal et vous voulez le louer sans stress ? On vous aide à trouver des locataires responsables rapidement et facilement.</p>
+    <h3>Que fait-on pour vous ?</h3>
+    <ul>
+      <li>Publication sur les portails et les réseaux sociaux</li>
+      <li>Améliorations rapides (peinture, nettoyage, photos)</li>
+      <li>Filtrage des candidats et vérifications légales</li>
+      <li>Suivi jusqu'à la remise des clés</li>
+    </ul>
+    <a class="whatsapp" href="https://wa.me/15149758856" target="_blank">Parlez nous sur WhatsApp</a>
+    <p><strong>Premier logement : 100 % gratuit.</strong><br/>Laissez-nous vous montrer ce qu’on peut faire.</p>
+    <h3>Contactez-nous</h3>
+    <form method="POST" action="https://formsubmit.co/your@email.com">
+      <input type="text" name="name" placeholder="Votre nom complet" required />
+      <input type="email" name="email" placeholder="Courriel électronique" required />
+      <input type="text" name="phone" placeholder="Téléphone (optionnel)" />
+      <textarea name="message" rows="4" placeholder="Précisez ce que vous cherchez ou proposez un logement"></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+    <footer>Locations Express MTL | Service indépendant, sans représentation légale.</footer>
+  </div>
 </body>
 </html>
