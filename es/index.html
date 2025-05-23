@@ -1,28 +1,75 @@
 
-    <!DOCTYPE html>
-    <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <title>Arriendos Express MTL</title>
-        <style>{style}</style>
-    </head>
-    <body>
-        <img src="../trouvala-logo.png" alt="Trouvala Logo">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Arriendos Express MTL</title>
+    <style>
+        body {
+            background-color: #fefdfb;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        a {
+            color: #0b3d91;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        img {
+            max-width: 180px;
+            margin: 20px auto;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <img src="../trouvala-logo.png" alt="Trouvala Logo" />
+    <div class="container">
         <div>
-            <a href="index.html">Esp</a> | <a href="../en/index.html">Eng</a> | <a href="../fr/index.html">Fr</a>
+            <a href="../es/index.html">Esp</a> | 
+            <a href="../en/index.html">Eng</a> | 
+            <a href="../fr/index.html">Fr</a>
         </div>
-        <h1>¿Buscas arriendo en Montreal?</h1>
-        <p>Te ayudamos a encontrarlo rápido, sin estafas y sin perder tiempo.</p>
-        <a class="btn" href="https://wa.me/15147030572" target="_blank">Habla con nosotros por WhatsApp</a>
-        <h3>Rellena el formulario</h3>
-        <form class="form" action="https://formsubmit.co/info@trouvala.com" method="POST">
-            <input type="text" name="Nombre completo" placeholder="Tu nombre completo" required>
-            <input type="email" name="Correo" placeholder="Correo electrónico" required>
-            <input type="text" name="Teléfono" placeholder="Teléfono (opcional)">
-            <input type="text" name="Tipo" placeholder="Tipo de arriendo (ej: 3½)">
-            <textarea name="Comentarios" placeholder="Comentarios adicionales (opcional)"></textarea>
-            <button type="submit" class="btn">Enviar</button>
+        <h2>¿Buscas arriendo en Montreal?</h2>
+        <p>Te ayudamos a encontrarlo rápido, sin estafas y sin perder tu tiempo.</p>
+        <a href="https://wa.me/15149999999">
+            <button>Escríbenos por WhatsApp</button>
+        </a>
+        <h3>Completa el formulario</h3>
+        <form action="https://formsubmit.co/tu_correo@ejemplo.com" method="POST">
+            <input type="text" name="name" placeholder="Tu nombre completo" required />
+            <input type="email" name="email" placeholder="Correo electrónico" required />
+            <input type="text" name="phone" placeholder="Teléfono (opcional)" />
+            <input type="text" name="apartment_type" placeholder="Tipo de departamento que buscas (ej: 3½)" required />
+            <input type="text" name="budget" placeholder="Presupuesto aproximado" />
+            <textarea name="comments" placeholder="Comentarios adicionales (opcional)"></textarea>
+            <button type="submit">Enviar solicitud</button>
         </form>
-    </body>
-    </html>
-    
+    </div>
+</body>
+</html>
