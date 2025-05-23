@@ -1,28 +1,75 @@
 
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Express Rentals MTL</title>
-        <style>{style}</style>
-    </head>
-    <body>
-        <img src="../trouvala-logo.png" alt="Trouvala Logo">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Express Rentals MTL</title>
+    <style>
+        body {
+            background-color: #fefdfb;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        a {
+            color: #0b3d91;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        img {
+            max-width: 180px;
+            margin: 20px auto;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <img src="../trouvala-logo.png" alt="Trouvala Logo" />
+    <div class="container">
         <div>
-            <a href="../es/index.html">Esp</a> | <a href="index.html">Eng</a> | <a href="../fr/index.html">Fr</a>
+            <a href="../es/index.html">Esp</a> | 
+            <a href="../en/index.html">Eng</a> | 
+            <a href="../fr/index.html">Fr</a>
         </div>
-        <h1>Looking for a place to rent in Montreal?</h1>
+        <h2>Looking for a place to rent in Montreal?</h2>
         <p>We help you find it quickly, without scams or wasting your time.</p>
-        <a class="btn" href="https://wa.me/15147030572" target="_blank">Write to us on WhatsApp</a>
+        <a href="https://wa.me/15149999999">
+            <button>Write to us on WhatsApp</button>
+        </a>
         <h3>Fill out the form</h3>
-        <form class="form" action="https://formsubmit.co/info@trouvala.com" method="POST">
-            <input type="text" name="Full name" placeholder="Your full name" required>
-            <input type="email" name="Email" placeholder="Email" required>
-            <input type="text" name="Phone" placeholder="Phone (optional)">
-            <input type="text" name="Type" placeholder="Type of apartment you're looking for (e.g. 3½)">
-            <textarea name="Additional comments" placeholder="Additional comments (optional)"></textarea>
-            <button type="submit" class="btn">Send request</button>
+        <form action="https://formsubmit.co/tu_correo@ejemplo.com" method="POST">
+            <input type="text" name="name" placeholder="Your full name" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <input type="text" name="phone" placeholder="Phone (optional)" />
+            <input type="text" name="apartment_type" placeholder="Type of apartment you're looking for (e.g. 3½)" required />
+            <input type="text" name="budget" placeholder="Approximate budget" />
+            <textarea name="comments" placeholder="Additional comments (optional)"></textarea>
+            <button type="submit">Send request</button>
         </form>
-    </body>
-    </html>
-    
+    </div>
+</body>
+</html>
