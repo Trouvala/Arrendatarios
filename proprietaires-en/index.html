@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trouvala</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f7f7;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            background: #fff;
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        }
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+        button {
+            background: #28a745;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .lang {
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="/trouvala-logo.png" alt="Trouvala Logo" style="max-width: 180px; margin-bottom: 20px;">
+        <div class="lang"><a href="/proprietaires-es">Esp</a> | <a href="/proprietaires-en">Eng</a> | <a href="/proprietaires">Fr</a></div>
+        <h1>Do you own a property in Montreal?</h1>
+        <p>Let us help you rent it fast, without headaches.</p>
+        <a href="https://wa.me/15149758856" target="_blank">
+            <button>Write to us on WhatsApp</button>
+        </a>
+        <h3>Owner Form</h3>
+        <form method="POST" action="https://formsubmit.co/your@email.com">
+            <input type="text" name="name" placeholder="Your full name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="phone" placeholder="Phone (optional)">
+            <input type="text" name="type" placeholder="Type of property (e.g. 3½)">
+            <textarea name="message" rows="4" placeholder="Additional comments (optional)"></textarea>
+            <button type="submit">Send request</button>
+        </form>
+    </div>
+</body>
+</html>
