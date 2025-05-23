@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trouvala</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f7f7;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            background: #fff;
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        }
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+        button {
+            background: #28a745;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .lang {
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="/trouvala-logo.png" alt="Trouvala Logo" style="max-width: 180px; margin-bottom: 20px;">
+        <div class="lang"><a href="/es">Esp</a> | <a href="/en">Eng</a> | <a href="/">Fr</a></div>
+        <h1>¿Buscas un departamento en Montreal?</h1>
+        <p>Te ayudamos a encontrarlo rápido, sin estafas y sin perder tiempo.</p>
+        <a href="https://wa.me/15149758856" target="_blank">
+            <button>Escríbenos por WhatsApp</button>
+        </a>
+        <h3>Completa el formulario</h3>
+        <form method="POST" action="https://formsubmit.co/your@email.com">
+            <input type="text" name="name" placeholder="Tu nombre completo" required>
+            <input type="email" name="email" placeholder="Correo electrónico" required>
+            <input type="text" name="phone" placeholder="Teléfono (opcional)">
+            <input type="text" name="type" placeholder="Tipo de departamento que buscas (ej: 3½)">
+            <textarea name="message" rows="4" placeholder="Comentarios adicionales (opcional)"></textarea>
+            <button type="submit">Enviar solicitud</button>
+        </form>
+    </div>
+</body>
+</html>
