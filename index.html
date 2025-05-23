@@ -1,35 +1,33 @@
 
-    <!DOCTYPE html>
-    <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <title>Locations Express MTL</title>
-       <style>
-  body {{
-    background-color: #fefdfb;
-    ...
-  }}
-  ...
-</style>
-    </head>
-    <body>
-        <img src="../trouvala-logo.png" alt="Trouvala Logo">
-        <div>
-            <a href="../es/index.html">Esp</a> | <a href="../en/index.html">Eng</a> | <a href="index.html">Fr</a>
-        </div>
-        <h1>À la recherche d’un logement à Montréal ?</h1>
-        <p>Nous vous aidons à le trouver rapidement, sans arnaques et sans perdre votre temps.</p>
-        <a class="btn" href="https://wa.me/15147030572" target="_blank">Écrivez-nous sur WhatsApp</a>
-        <h3>Remplissez le formulaire</h3>
-        <form class="form" action="https://formsubmit.co/info@trouvala.com" method="POST">
-            <input type="text" name="Nom complet" placeholder="Votre nom complet" required>
-            <input type="email" name="Courriel" placeholder="Courriel" required>
-            <input type="text" name="Téléphone" placeholder="Téléphone (optionnel)">
-            <input type="text" name="Type de logement" placeholder="Type de logement recherché (ex : 3½)">
-            <input type="text" name="Budget" placeholder="Budget approximatif">
-            <textarea name="Commentaires" placeholder="Commentaires supplémentaires (optionnel)"></textarea>
-            <button type="submit" class="btn">Envoyer la demande</button>
-        </form>
-    </body>
-    </html>
-    
+   <!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Locations Express MTL</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="../trouvala-logo.png" alt="Trouvala Logo" class="logo" />
+      <div class="language-switch">
+        <a href="../es/index.html">Esp</a> |
+        <a href="../en/index.html">Eng</a> |
+        <a href="index.html">Fr</a>
+      </div>
+      <h1>À la recherche d’un logement à Montréal ?</h1>
+      <p>Nous vous aidons à le trouver rapidement, sans arnaques et sans perdre votre temps.</p>
+      <a href="https://wa.me/15149999999" class="cta-button">Écrivez-nous sur WhatsApp</a>
+      <h2>Remplissez le formulaire</h2>
+      <form action="https://formsubmit.co/ton@email.com" method="POST">
+        <input type="text" name="Nom complet" placeholder="Votre nom complet" required />
+        <input type="email" name="Courriel" placeholder="Courriel" required />
+        <input type="text" name="Téléphone" placeholder="Téléphone (optionnel)" />
+        <input type="text" name="Type de logement" placeholder="Type de logement recherché (ex : 3½)" />
+        <input type="text" name="Budget" placeholder="Budget approximatif" />
+        <textarea name="Commentaires" placeholder="Commentaires supplémentaires (optionnel)"></textarea>
+        <button type="submit">Envoyer la demande</button>
+      </form>
+    </div>
+  </body>
+</html>
